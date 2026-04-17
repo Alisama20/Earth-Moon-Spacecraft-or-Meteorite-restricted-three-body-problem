@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[codz]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Environments
+.env
+.envrc
+.venv
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# mypy / ruff
+.mypy_cache/
+.ruff_cache/
+
+# Numba cache
+__numba_cache__/
+
+# pytest
+.pytest_cache/
+.coverage
+
+# Claude
+.claude/
+
+# Visual Studio Code
+# .vscode/

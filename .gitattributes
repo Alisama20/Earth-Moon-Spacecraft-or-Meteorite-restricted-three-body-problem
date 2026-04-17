@@ -1,0 +1,3 @@
+# Keep GitHub language stats focused on Python.
+figures/**    linguist-documentation
+*.png         linguist-documentation
