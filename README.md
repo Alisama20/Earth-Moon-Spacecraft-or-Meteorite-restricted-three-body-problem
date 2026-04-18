@@ -136,3 +136,12 @@ python scripts/run_meteorite.py
 Both scripts write PNG figures to `figures/` and print progress to stdout.
 
 > **Numba JIT compilation**: the first run compiles the inner loops (~5–15 s). Subsequent runs use the cached bytecode and are significantly faster.
+
+---
+
+## Author
+
+**A. S. Amari Rabah**
+
+Developed as part of the coursework for *Computational Physics* —
+Bachelor's Degree in Physics, University of Granada, Spain.
