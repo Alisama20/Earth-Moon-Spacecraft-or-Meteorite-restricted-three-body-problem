@@ -71,9 +71,7 @@ $\mathcal{J}$ is **exactly conserved** for circular lunar orbits and serves as a
 ### RK4 integrator
 
 Standard fourth-order Runge-Kutta with fixed time step $h = 1\ \mathrm{s}$, applied to the four-dimensional phase-space vector $(\rho, \varphi, p_\rho, p_\varphi)$.  Inner loops are compiled with **Numba `@njit`**, reducing 10⁶-step integrations to a few seconds.
-
 ---
-
 ## Initial conditions
 
 ### Rocket (from Earth's surface)
@@ -93,9 +91,7 @@ Earth's escape velocity is $v_{\rm esc} = \sqrt{2G M_\oplus / R_\oplus} \approx 
 ### Meteorite (from deep space)
 
 Starts at $\rho_0 = 10\,d_{TL}$ ($\approx 3.9 \times 10^9$ m from Earth) with purely inward radial velocity $v_0 = 5\ \mathrm{km\,s^{-1}}$.
-
 ---
-
 ## Results
 
 ### Trajectory comparison: near-escape vs. hyperbolic
@@ -119,9 +115,7 @@ The RK4 scheme conserves $\mathcal{J}$ to within $\sim 10^{-6}\ \mathrm{m^2\,s^{
 | ![wide](figures/meteorite_trajectory.png) | ![zoom](figures/meteorite_rocket_zoom.png) |
 
 The meteorite (red) falls from $\rho = 10$ on a nearly radial trajectory, accelerated by Earth's gravity as it approaches.  The rocket (blue, $v_0 = 11.3\ \mathrm{km\,s^{-1}}$, $\theta = \pi/3$) is launched simultaneously and escapes outward in a different direction.  The two particles are gravitationally independent (no rocket propulsion, no collision model); the simulation illustrates the distinct phase-space regions accessible from each set of initial conditions.
-
 ---
-
 ## Usage
 
 ```bash
@@ -136,9 +130,7 @@ python scripts/run_meteorite.py
 Both scripts write PNG figures to `figures/` and print progress to stdout.
 
 > **Numba JIT compilation**: the first run compiles the inner loops (~5–15 s). Subsequent runs use the cached bytecode and are significantly faster.
-
 ---
-
 ## Author
 
 **A. S. Amari Rabah**
